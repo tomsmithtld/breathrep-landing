@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Breathing for Focus and Calm: Complete Guide | BreathRep</title>
+    <meta name="description" content="Box breathing (4-4-4-4) used by Navy SEALs, surgeons, and athletes. How to do it, why it works, and when to use it.">
+    <meta property="og:title" content="Box Breathing for Focus and Calm: Complete Guide">
+    <meta property="og:description" content="The Navy SEAL breathing technique that takes 4 minutes and works every time.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://breathrep.33c.dev/blog/box-breathing-guide">
+    <meta property="og:image" content="https://breathrep.33c.dev/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://breathrep.33c.dev/blog/box-breathing-guide">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Box Breathing for Focus and Calm: Complete Guide","description":"Box breathing (4-4-4-4) used by Navy SEALs, surgeons, and athletes. How to do it, why it works, and when to use it.","author":{"@type":"Person","name":"Tom"},"publisher":{"@type":"Organization","name":"BreathRep","url":"https://breathrep.33c.dev"},"datePublished":"2026-02-16","url":"https://breathrep.33c.dev/blog/box-breathing-guide","image":"https://breathrep.33c.dev/og-image.png"}
+    </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌬️</text></svg>">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0D0F14;
+            --bg-card: rgba(22, 18, 12, 0.5);
+            --orange: #F97316;
+            --orange-light: #FB923C;
+            --orange-glow: rgba(249, 115, 22, 0.2);
+            --cyan: #06B6D4;
+            --cyan-light: #22D3EE;
+            --white: #f3f0ec;
+            --white-70: rgba(243, 240, 236, 0.7);
+            --white-40: rgba(243, 240, 236, 0.4);
+            --white-10: rgba(243, 240, 236, 0.1);
+            --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        html { scroll-behavior: smooth; background: var(--bg); }
+        body { font-family: var(--font); background: var(--bg); color: var(--white); line-height: 1.75; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+        .glow { position: fixed; border-radius: 50%; filter: blur(140px); z-index: 0; pointer-events: none; }
+        .glow--1 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%); top: -100px; right: -80px; }
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 14px 0; background: rgba(13, 15, 20, 0.88); backdrop-filter: blur(18px); border-bottom: 1px solid var(--white-10); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--white); font-size: 18px; font-weight: 700; }
+        .nav-logo .accent { color: var(--orange-light); }
+        .nav-cta { padding: 8px 18px; background: var(--orange); color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+        .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 18px var(--orange-glow); }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+        article { padding: 120px 0 60px; }
+        .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--white-40); margin-bottom: 32px; }
+        .breadcrumb a { color: var(--orange-light); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        article h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 16px; }
+        .article-meta { font-size: 14px; color: var(--white-40); margin-bottom: 40px; display: flex; align-items: center; gap: 12px; }
+        article h2 { font-size: 24px; font-weight: 700; margin: 48px 0 16px; color: var(--white); }
+        article p { font-size: 17px; color: var(--white-70); margin-bottom: 20px; }
+        article ul { margin: 0 0 24px 20px; color: var(--white-70); font-size: 17px; }
+        article li { margin-bottom: 8px; }
+        .callout { background: var(--bg-card); border-left: 3px solid var(--cyan); padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 32px 0; }
+        .callout p { color: var(--white); margin-bottom: 0; font-size: 16px; }
+        .box-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; max-width: 300px; margin: 32px auto; }
+        .box-visual .side { background: var(--bg-card); border: 1px solid var(--white-10); padding: 20px; text-align: center; border-radius: 4px; }
+        .box-visual .side .phase { font-size: 13px; color: var(--cyan-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+        .box-visual .side .count { font-size: 28px; font-weight: 800; color: var(--white); margin-top: 4px; }
+        .cta-section { text-align: center; padding: 60px 0; margin-top: 40px; border-top: 1px solid var(--white-10); }
+        .cta-section h2 { margin-top: 0; }
+        .cta-section p { color: var(--white-40); max-width: 480px; margin: 0 auto 24px; }
+        .cta-btn { display: inline-block; padding: 14px 28px; background: var(--orange); color: #fff; border: none; border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px var(--orange-glow); }
+        .related { margin: 48px 0 0; padding: 32px 0; border-top: 1px solid var(--white-10); }
+        .related h3 { font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+        .related a { display: block; padding: 12px 16px; background: var(--bg-card); border: 1px solid var(--white-10); border-radius: 10px; color: var(--orange-light); text-decoration: none; margin-bottom: 8px; font-size: 15px; transition: border-color 0.2s; }
+        .related a:hover { border-color: var(--orange); }
+        .related a span { display: block; color: var(--white-40); font-size: 13px; margin-top: 4px; }
+        footer { text-align: center; padding: 40px 0; color: var(--white-40); font-size: 13px; border-top: 1px solid var(--white-10); }
+        footer a { color: var(--white-40); text-decoration: none; }
+        footer a:hover { color: var(--white); }
+        @media (max-width: 640px) { article { padding-top: 100px; } .container { padding: 0 16px; } }
+    </style>
+</head>
+<body>
+    <div class="glow glow--1"></div>
+    <nav>
+        <div class="container">
+            <a href="/" class="nav-logo">🌬️ Breath<span class="accent">Rep</span></a>
+            <a href="/#waitlist" class="nav-cta">Join Waitlist</a>
+        </div>
+    </nav>
+    <article>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">BreathRep</a> <span>/</span> <a href="/blog/">Blog</a> <span>/</span> <span>Box Breathing</span>
+            </div>
+            <h1>Box Breathing for Focus and Calm</h1>
+            <div class="article-meta">
+                <span>By Tom</span>
+                <span>|</span>
+                <span>February 2026</span>
+                <span>|</span>
+                <span>5 min read</span>
+            </div>
+
+            <p>box breathing is probably the simplest breathing technique that actually works. four equal parts: breathe in, hold, breathe out, hold. repeat. it's used by Navy SEALs, first responders, surgeons, and anyone else who needs to stay calm under pressure.</p>
+
+            <p>I use it before presentations, during stressful meetings, and sometimes just when I'm wound up and can't focus. it works in about 4 minutes.</p>
+
+            <h2>The technique</h2>
+
+            <p>it's called "box" breathing because there are 4 equal sides, like a box:</p>
+
+            <div class="box-visual">
+                <div class="side"><div class="phase">Inhale</div><div class="count">4s</div></div>
+                <div class="side"><div class="phase">Hold</div><div class="count">4s</div></div>
+                <div class="side"><div class="phase">Exhale</div><div class="count">4s</div></div>
+                <div class="side"><div class="phase">Hold</div><div class="count">4s</div></div>
+            </div>
+
+            <p>that's one cycle: 16 seconds. do this for 4-5 minutes (about 15-20 cycles) and you'll feel a noticeable shift in your mental state.</p>
+
+            <p>the standard timing is 4-4-4-4, but you can adjust. some people prefer 5-5-5-5 or even 6-6-6-6 once they're more experienced. the key is that all four phases are the same length.</p>
+
+            <h2>How to do it properly</h2>
+
+            <ul>
+                <li><strong>sit comfortably.</strong> back straight, feet flat on the floor. you can close your eyes or keep them open with a soft gaze. hands on your lap or knees.</li>
+                <li><strong>breathe through your nose.</strong> in and out, through the nose. mouth closed. nasal breathing activates the parasympathetic nervous system more effectively than mouth breathing.</li>
+                <li><strong>breathe into your belly first.</strong> let your diaphragm expand, then your chest. on the exhale, let the chest deflate first, then the belly. this is diaphragmatic breathing and it's more calming than shallow chest breathing.</li>
+                <li><strong>the holds should be relaxed.</strong> you're not clenching or straining. just a gentle pause. like pressing pause on a video. your throat is open, muscles are relaxed.</li>
+            </ul>
+
+            <h2>Why it works</h2>
+
+            <p>the mechanism is your vagus nerve. the vagus nerve runs from your brainstem to your gut and controls your parasympathetic nervous system (the "rest and digest" system). slow, controlled breathing, especially with extended exhales and holds, stimulates the vagus nerve and shifts your body from fight-or-flight to calm.</p>
+
+            <p>the "hold after exhale" phase is the secret ingredient. most calming breathing techniques focus on long exhales. box breathing adds the post-exhale hold, which further activates the parasympathetic response and teaches your body that having empty lungs is safe.</p>
+
+            <div class="callout">
+                <p>a 2017 study in Frontiers in Psychology found that deep breathing exercises significantly reduced cortisol levels and improved sustained attention. the researchers noted that even a single session produced measurable improvements.</p>
+            </div>
+
+            <h2>When to use it</h2>
+
+            <ul>
+                <li><strong>before something stressful.</strong> meeting, presentation, difficult conversation. 2-3 minutes of box breathing beforehand will lower your heart rate and clear your head.</li>
+                <li><strong>when you can't sleep.</strong> lying in bed with a racing mind? box breathing gives your brain something to focus on and activates the sleep-promoting parasympathetic system.</li>
+                <li><strong>after something stressful.</strong> if your heart rate is up and your mind is spinning, box breathing brings you back down faster than just "trying to relax."</li>
+                <li><strong>as a daily practice.</strong> 5 minutes in the morning sets a calm baseline for the day. the more you practice, the faster you can drop into a calm state when you need it.</li>
+            </ul>
+
+            <h2>Box breathing vs other techniques</h2>
+
+            <p>there are loads of breathing techniques. here's how box breathing compares:</p>
+
+            <ul>
+                <li><strong>4-7-8 breathing (Andrew Weil):</strong> inhale 4, hold 7, exhale 8. more calming than box breathing because the exhale is longer. better for sleep. box breathing is better for alert focus.</li>
+                <li><strong>Wim Hof breathing:</strong> completely different purpose. Wim Hof is about energy, adrenaline, and pushing your limits. Box breathing is about calm and control. they complement each other well.</li>
+                <li><strong>physiological sigh (Huberman):</strong> double inhale through nose, long exhale through mouth. fastest single-breath reset. great for acute stress. box breathing is better for sustained calm over minutes.</li>
+            </ul>
+
+            <p>there's no "best" technique. they're different tools for different situations. I use box breathing most often because it works in the widest range of contexts.</p>
+
+            <h2>Tips for consistency</h2>
+
+            <p>the hardest part is remembering to do it. a few things that helped me stick with it:</p>
+
+            <ul>
+                <li><strong>attach it to an existing habit.</strong> I do 5 minutes of box breathing right after my morning coffee, while it's brewing. coffee starts, breathing starts.</li>
+                <li><strong>use a timer.</strong> counting the phases manually is fine but it keeps your conscious mind busy. a timer or app that guides the rhythm lets you actually relax into it.</li>
+                <li><strong>start with 2 minutes.</strong> 5 minutes is the target, but 2 minutes is enough to feel something. lower the bar until it's effortless to show up.</li>
+            </ul>
+
+            <div class="related">
+                <h3>More from the blog</h3>
+                <a href="/blog/wim-hof-breathing-guide">
+                    Wim Hof Breathing Method: A Beginner's Guide
+                    <span>Controlled hyperventilation, breath holds, and why it feels amazing</span>
+                </a>
+            </div>
+
+            <div class="cta-section">
+                <h2>Time your breathing with BreathRep</h2>
+                <p>Box breathing, Wim Hof, 4-7-8, and custom protocols. Visual timing, round tracking, session history.</p>
+                <a href="/#waitlist" class="cta-btn">Join the Waitlist</a>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <p>Built by Tom &nbsp;|&nbsp; <a href="/#privacy">Privacy</a> &nbsp;|&nbsp; <a href="/#terms">Terms</a> &nbsp;|&nbsp; &copy; 2026 BreathRep</p>
+        </div>
+    </footer>
+</body>
+</html>
